@@ -10,6 +10,19 @@
     color: #333;
     line-height: 1.6;
   }
+
+   /* Fade-in effect (initially hidden) */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    /* When the element is in view */
+    .fade-in.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
   
   /* Navbar */
   header {

@@ -1,0 +1,176 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  header {
+    background: #222;
+    padding: 1rem 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: #333;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  .hero-section p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+  }
+  .cta-btn {
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .cta-btn:hover {
+    background: #0097a7;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  #about {
+    background: #f3f3f3;
+  }
+  #projects {
+    background: #f9f9f9;
+  }
+  #certificates {
+    background: #f2f2f2;
+  }
+  #contact {
+    background: #e0e0e0;
+  }
+
+  .section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .section p {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  
+  /* Projects */
+  .project {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #00bcd4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  .project-link {
+    color: #00bcd4;
+    font-weight: bold;
+  }
+  .project-link:hover {
+    color: #007c91;
+  }
+
+  /* Events Section */
+.event-category {
+    margin-bottom: 40px;
+  }
+  .event-category h3 {
+    font-size: 1.6rem;
+    color: #00bcd4;
+    margin-bottom: 15px;
+  }
+  .event {
+    background: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #00bcd4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  .event h4 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+  .event p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* Certificates Preview */
+  .cert-list-preview {
+    list-style: square inside;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Contact */
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-links a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: #00bcd4;
+  }
+  

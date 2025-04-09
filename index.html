@@ -126,9 +126,15 @@
     // Initialize AOS (if you want to use AOS effects for specific elements)
     AOS.init();
 
-    // Scroll event for custom fade-in effect
+    // Function to check if an element is in the viewport
+    function isInView(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 && rect.top <= window.innerHeight;
+    }
+
+    // On window scroll, check elements
     window.addEventListener('scroll', function () {
-      let elements = document.querySelectorAll('.fade-in');
+      const elements = document.querySelectorAll('.fade-in');
       elements.forEach(function (element) {
         if (isInView(element)) {
           element.classList.add('in-view');
@@ -136,10 +142,8 @@
       });
     });
 
-    function isInView(element) {
-      const rect = element.getBoundingClientRect();
-      return rect.top >= 0 && rect.top <= window.innerHeight;
-    }
+    // Initially check if elements are already in view (if already scrolled)
+    window.dispatchEvent(new Event('scroll'));
   </script>
   
 </body>

@@ -1,0 +1,447 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in effect (initially hidden) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When the element is in view */
+.fade-in.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  background: #222;
+  padding: 1rem 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #333;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-photo {
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+.hero-photo img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ccc;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+.hero-section p {
+  margin: 10px 0 20px;
+  font-size: 1.2rem;
+}
+.cta-btn {
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.cta-btn:hover {
+  background: #0097a7;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#about {
+  background: #f3f3f3;
+}
+#projects {
+  background: #f9f9f9;
+}
+#events {
+  background: #f5f5f5;
+}
+#certificates {
+  background: #f2f2f2;
+}
+#contact {
+  background: #e0e0e0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.section p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+.hidden-projects,
+.hidden-organized-events,
+.hidden-participated-events {
+  display: none;
+}
+
+.view-more-projects-btn,
+.view-more-organized-btn,
+.view-more-participated-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto; /* Center the button horizontally */
+}
+
+.view-more-btn:hover,
+.view-more-organized-btn:hover,
+.view-more-participated-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Projects */
+.project {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 5px solid #00bcd4;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-link {
+  color: #00bcd4;
+  font-weight: bold;
+  cursor: pointer;
+}
+.project-link:hover {
+  color: #007c91;
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  margin-left: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: white;
+  vertical-align: middle;
+}
+
+.in-progress {
+  background-color: #f39c12; /* orange */
+}
+
+.completed {
+  background-color: #27ae60; /* green */
+}
+
+.on-hold {
+  background-color: #e74c3c; /* red */
+}
+
+.tech-stack-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.tech-stack {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.tech-stack span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tech-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Events Section */
+.event-category {
+  margin-bottom: 40px;
+}
+.event-category h3 {
+  font-size: 1.6rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+}
+.event {
+  position: relative; /* For positioning the logo */
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 5px solid #00bcd4;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.event h4 {
+  margin-bottom: 10px;
+  color: #222;
+}
+.event p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Style for the event cover photo at the bottom */
+.event-cover-photo {
+  margin-top: 20px;
+  text-align: center; /* Ensures the content inside is centered */
+}
+
+.event-cover-photo img {
+  width: 60%; /* Make the image responsive */
+  margin: 0 auto; /* Horizontally center the image */
+  max-height: 175px; /* Set a smaller height for the cover photo */
+  object-fit: cover; /* Ensure it covers the area */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Position the logo in the top-right corner */
+.event-logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Aligns the logo to the right */
+  z-index: 10; /* Ensures the logo is above other elements */
+}
+
+.event-logo {
+  width: 50px; /* Size of the logo */
+  height: auto;
+}
+
+.event-image {
+  margin-top: 15px; /* Space between images and text */
+}
+
+.rank-proof {
+  width: 90%; /* Adjust the size of the rank proof image */
+  margin-top: 10px;
+}
+
+/* Certificates Preview */
+
+#certificates {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.certificate-badge {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.certificate-img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.certificate-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.certificate-org {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Fullscreen certificate image */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  margin: 20px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10; /* Ensure it stays above the image */
+}
+
+/* Disable scrolling on the body when the modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+/* Centering modal content */
+.modal .modal-content {
+  display: block;
+  margin: auto;
+}
+
+/* Button Styling */
+.cta-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta-btn:hover {
+  background-color: #45a049;
+}
+
+/* Contact */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input,
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+textarea {
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #00bcd4;
+}

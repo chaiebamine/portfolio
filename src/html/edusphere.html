@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduSphere - Portfolio</title>
+    <link rel="stylesheet" href="../css/project.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>EduSphere</h1>
+      <p class="status">
+        Status: <span class="status-badge completed">Completed</span>
+      </p>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="#project-description">Overview</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#challenges">Challenges</a></li>
+          <li><a href="#screenshots">Demo</a></li>
+          <li><a href="#future-plans">Future Plans</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Project Description Section -->
+      <section id="project-description">
+        <h2>Project Overview</h2>
+        <p>
+          The <strong>EduSphere</strong> is a terminal-based educational
+          management system built entirely in C. It provides an intuitive way for
+          managing students, courses, and faculty members, all within a simple
+          command-line interface. This system offers role-based access to ensure
+          that users (admins, faculty, and students) have the appropriate
+          permissions.
+        </p>
+        <p>
+          With features like user authentication, course tracking, and file
+          management, EduSphere makes education management streamlined and efficient.
+          It was developed with a focus on providing core functionality for educational
+          institutions.
+        </p>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <p><strong>Programming Language:</strong></p>
+        <div class="tech-stack">
+          <span>
+            <img src="../../assets/logos/c.svg" alt="C" class="tech-logo" /> (Terminal-based)
+          </span>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+          <li>
+            <strong>Authentication System:</strong> Role-based authentication allows for
+            different access levels (Admin, Faculty, Student).
+          </li>
+          <li>
+            <strong>Course Management:</strong> Admins can add, update, or delete courses, 
+            and students can enroll in them.
+          </li>
+          <li>
+            <strong>Student Tracking:</strong> The system tracks student grades and attendance,
+            providing a clear overview of their performance.
+          </li>
+          <li>
+            <strong>File Handling:</strong> The system allows for storing and retrieving student
+            and course-related files, such as assignments and grades.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Challenges Section -->
+      <section id="challenges">
+        <h2>Challenges Faced</h2>
+        <ul>
+          <li>
+            <strong>Managing File Handling in C:</strong> Since C lacks built-in support for
+            file management, a lot of custom code had to be written to store and retrieve files.
+          </li>
+          <li>
+            <strong>Implementing Role-Based Access:</strong> Ensuring that users had the right
+            permissions based on their role was complex, but was solved by designing an
+            efficient user authentication system.
+          </li>
+          <li>
+            <strong>Complexity of the Command-Line Interface:</strong> Ensuring the program was
+            user-friendly despite being terminal-based required clear instructions and concise
+            error handling.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Screen Recording Section -->
+      <section id="screenshots">
+        <h2>Demo Video</h2>
+        <p>Watch a screen recording showcasing how the EduSphere system works in the terminal:</p>
+        <div class="video-container">
+          <video controls width="70%">
+            <source src="../../assets/project/edusphere/edusphere.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <!-- Future Plans Section -->
+      <section id="future-plans">
+        <h2>Future Plans</h2>
+        <p>
+          While EduSphere is a terminal-based solution, future plans include:
+          <ul>
+            <li>Developing a graphical user interface (GUI) for more ease of use.</li>
+            <li>Implementing a cloud-based storage solution for data persistence.</li>
+            <li>Integrating real-time communication for notifications between faculty and students.</li>
+            <li>Adding advanced student analytics features for better insights on student progress.</li>
+          </ul>
+        </p>
+      </section>
+
+      <!-- GitHub Link -->
+  <div class="github-link">
+    <a href="https://github.com/chaiebamine/EduSphere" target="_blank" class="github-btn">View on GitHub</a>
+  </div>
+
+      <section id="back">
+        <a href="../../index.html#projects" class="back-to-projects-btn">Back to Projects</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/carousel.js"></script>
+  </body>
+</html>

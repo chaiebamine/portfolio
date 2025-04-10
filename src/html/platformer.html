@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coin Rush - A platformer game where a pirate collects money, avoids enemies, and wins by collecting his hat. Features health bar and immersive sound effects."
+    />
+    <title>Coin Rush - Project Details</title>
+    <link rel="stylesheet" href="../css/project.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h1>Coin Rush</h1>
+      <span class="status-badge completed">Completed</span>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="#game-features">Game Features</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#development-process">Development Process</a></li>
+          <li><a href="#gameplay-mechanics">Gameplay Mechanics</a></li>
+          <li><a href="#challenges-faced">Challenges Faced</a></li>
+          <li><a href="#future-improvements">Future Improvements</a></li>
+        </ul>
+      </nav>
+
+      <!-- Project Detail Section -->
+    </header>
+
+    <section class="project-detail-content">
+      <p>
+        <strong>Coin Rush </strong>is an exciting 2D platformer game where you
+        control a pirate who runs through various levels collecting gold coins
+        and avoiding enemies. The objective is to reach the end of the level and
+        grab your pirate hat to win! However, the journey is full of danger, as
+        there are gaps where the pirate can fall and pirate enemies who will try
+        to stop him.
+      </p>
+      <p>
+        The game includes a health bar, so the pirate must avoid damage from
+        enemies and falling into pits. The game also features a range of
+        immersive sound effects that enhance the experience, from the sounds of
+        coins being collected to the pirate's footsteps and enemy attacks.
+      </p>
+    </section>
+
+    <!-- Game Features Section -->
+    <section id="game-features">
+      <h2>Game Features</h2>
+
+      <ul>
+        <li>
+          <strong>Health Bar:</strong> The pirate has a health bar that depletes
+          when he gets hit by enemies or falls into pits.
+        </li>
+        <li>
+          <strong>Gold Collection:</strong> The pirate collects gold coins
+          scattered throughout the levels, adding an extra incentive to explore
+          and jump across platforms.
+        </li>
+        <li>
+          <strong>Enemy Pirates:</strong> Pirate enemies roam the levels and
+          will attack the player on sight. Players must avoid or defeat them to
+          stay alive.
+        </li>
+        <li>
+          <strong>Level Objective:</strong> To win the level, the pirate must
+          collect his hat, which is located at the end of the level. Collecting
+          the hat marks the level as complete and allows the player to proceed
+          to the next one.
+        </li>
+        <li>
+          <strong>Interactive Platforms:</strong> Some platforms move,
+          disappear, or require the player to time jumps and actions precisely.
+        </li>
+        <li>
+          <strong>Sound Effects:</strong> The game includes immersive sound
+          effects such as footsteps, coin collection sounds, enemy attacks, and
+          environmental sounds, making the experience feel dynamic and engaging.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack">
+      <h2>Tech Stack</h2>
+      <p>The following technologies were used to develop Coin Rush:</p>
+      <ul>
+        <li>
+          <img
+            src="../../assets/logos/python.svg"
+            alt="Python Logo"
+            class="tech-logo"
+          />
+          <strong>Python:</strong> Python was used as the primary programming
+          language for game logic, mechanics, and event handling.
+        </li>
+        <li>
+          <img
+            src="../../assets/logos/pygame.png"
+            alt="Pygame Logo"
+            class="tech-logo"
+          />
+          <strong>Pygame:</strong> Pygame was used for handling the game's
+          graphical rendering, input management, and event handling. It provides
+          the necessary tools to create the platformer mechanics.
+        </li>
+        <li>
+          <img
+            src="../../assets/logos/asprite.svg"
+            alt="Aseprite Logo"
+            class="tech-logo"
+          />
+          <strong>Aseprite:</strong> Aseprite was used to design the pixel art
+          sprites, including the pirate character, enemies, platforms, and
+          backgrounds.
+        </li>
+        <li>
+          <img
+            src="../../assets/logos/tiled.png"
+            alt="Tiled Logo"
+            class="tech-logo"
+          />
+          <strong>Tiled:</strong> Tiled was used to design the levels, create
+          tile maps, and structure obstacles and platforms within the game.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Development Process Section -->
+    <section id="development-process">
+      <h2>Development Process</h2>
+      <p>
+        The development of <strong>Coin Rush</strong> started with basic platformer
+        mechanics, including the pirate’s movement, jumping, and gravity
+        mechanics. The initial focus was on getting the player’s movement fluid
+        and responsive. From there, we added interactive platforms and
+        obstacles, followed by the creation of the health bar and the coin
+        collection system.
+      </p>
+      <p>
+        After the basic mechanics were in place, we began implementing the enemy
+        pirates, who could damage the player. Each enemy was given unique
+        behavior and movement patterns. The levels were designed using the Tiled
+        level editor, making it easier to create varied and interesting
+        environments.
+      </p>
+      <p>
+        The art assets, including the pirate character, enemies, platforms, and
+        backgrounds, were created using Aseprite. The game’s pixel art style
+        helps to give it a classic, retro feel.
+      </p>
+    </section>
+
+    <!-- Gameplay Mechanics Section -->
+    <section id="gameplay-mechanics">
+      <h2>Gameplay Mechanics</h2>
+      <p>
+        <strong>Coin Rush</strong> features a simple but engaging control
+        system. The player controls the pirate using keyboard input, navigating
+        platforms, avoiding enemies, and collecting gold coins. The core
+        mechanics include:
+      </p>
+      <ul>
+        <li>
+          <strong>Player Movement:</strong> The pirate can run, jump, and fall,
+          with realistic gravity influencing movement and jump height.
+        </li>
+        <li>
+          <strong>Health System:</strong> The pirate has a health bar that
+          decreases when hit by enemies or falls into pits. If the health bar
+          reaches zero, the player must restart the level.
+        </li>
+        <li>
+          <strong>Gold Coins:</strong> Coins are scattered throughout the level,
+          and the player must collect them to increase their score. Coins also
+          serve as an incentive to explore different areas of each level.
+        </li>
+        <li>
+          <strong>Enemies:</strong> Pirate enemies patrol the levels and will
+          attack the player on sight. Players need to either avoid them or find
+          ways to neutralize them.
+        </li>
+        <li>
+          <strong>Level Completion:</strong> To win the level, the player must
+          reach the end of the level and collect their pirate hat, which is
+          placed in a designated spot.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Challenges Faced Section -->
+    <section id="challenges-faced">
+      <h2>Challenges Faced</h2>
+      <p>
+        One of the major challenges during development was ensuring that the
+        pirate's movement felt natural and responsive, while also adding
+        complexity with interactive platforms and different enemy types. The
+        health bar system needed fine-tuning to ensure it provided meaningful
+        feedback to the player while maintaining the right balance of
+        difficulty.
+      </p>
+      <p>
+        Another challenge was designing levels that were engaging but not too
+        difficult. Playtesting was key to balancing the platforming puzzles and
+        enemy encounters, as well as ensuring that the game remained fun without
+        becoming frustrating.
+      </p>
+    </section>
+
+    <!-- Future Improvements Section -->
+    <section id="future-improvements">
+      <h2>Future Improvements</h2>
+      <p>
+        There are several features planned for future updates of
+        <strong>Coin Rush</strong>:
+      </p>
+      <ul>
+        <li>
+          <strong>Power-ups:</strong> Introduce power-ups like temporary
+          invincibility or super jumps to add an additional layer of strategy
+          and excitement.
+        </li>
+        <li>
+          <strong>New Levels:</strong> Create new levels with different
+          environments, enemies, and obstacles to increase the variety of the
+          gameplay experience.
+        </li>
+        <li>
+          <strong>Boss Fights:</strong> Add boss battles at the end of certain
+          levels to increase difficulty and provide a more epic conclusion to
+          each stage.
+        </li>
+        <li>
+          <strong>Soundtrack:</strong> Enhance the game’s audio with a full
+          soundtrack that complements the gameplay and adds immersion.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Back -->
+    <section id="back">
+        <a href="../../index.html#projects" class="back-to-projects-btn"
+          >Back to Projects</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Coin Rush. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates - Amine Chaieb</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html#home">Home</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="../../index.html#projects">Projects</a></li>
+          <li><a href="../../index.html#events">Events</a></li>
+          <li><a href="../../index.html#certificates">Certificates</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+      <h2>Certificates</h2>
+      <div class="certificates-container">
+        <!-- Certificate 1 -->
+        <div class="certificate-badge" onclick="openModal('certificate4')">
+          <img
+            src="../../assets/certificates/statistics.png"
+            alt="Statistics"
+            class="certificate-img"
+          />
+          <p class="certificate-title">Statistics</p>
+          <p class="certificate-org">365DataScience (2024)</p>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-badge" onclick="openModal('certificate5')">
+          <img
+            src="../../assets/certificates/probability.png"
+            alt="Probability"
+            class="certificate-img"
+          />
+          <p class="certificate-title">Probability</p>
+          <p class="certificate-org">365DataScience (2024)</p>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-badge" onclick="openModal('certificate11')">
+          <img
+            src="../../assets/certificates/nvidia.jpg"
+            alt="Efficient LLM Customization"
+            class="certificate-img"
+          />
+          <p class="certificate-title">Efficient LLM Customization</p>
+          <p class="certificate-org">Nvidia (2024)</p>
+        </div>
+
+        <!-- Certificate 4 -->
+        <div class="certificate-badge" onclick="openModal('certificate21')">
+          <img
+            src="../../assets/certificates/programming hub.jpg"
+            alt="Ethical Hacking"
+            class="certificate-img"
+          />
+          <p class="certificate-title">Ethical Hacking</p>
+          <p class="certificate-org">Programming Hub (2024)</p>
+        </div>
+
+        <!-- Certificate 5 -->
+        <div class="certificate-badge" onclick="openModal('certificate31')">
+          <img
+            src="../../assets/certificates/programming hero.jpg"
+            alt="Python Certificate"
+            class="certificate-img"
+          />
+          <p class="certificate-title">Python Certificate</p>
+          <p class="certificate-org">Programming Hero (2024)</p>
+        </div>
+
+        <!-- Certificate 6 -->
+        <div class="certificate-badge" onclick="openModal('certificate6')">
+          <img
+            src="../../assets/certificates/algebra.png"
+            alt="Linear Algebra"
+            class="certificate-img"
+          />
+          <p class="certificate-title">Linear Algebra</p>
+          <p class="certificate-org">365DataScience (2024)</p>
+        </div>
+
+        <!-- Certificate 7 -->
+        <div
+          style="margin: 20px auto"
+          class="certificate-badge"
+          onclick="openModal('certificate7')"
+        >
+          <img
+            src="../../assets/certificates/english.jpg"
+            alt="English Level C1"
+            class="certificate-img"
+          />
+          <p class="certificate-title">English Level C1</p>
+          <p class="certificate-org">British Council (2023)</p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="certificateModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="certificateImage" class="modal-content" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Amine Chaieb</p>
+      <div class="footer-links">
+        <a href="https://github.com/chaiebamine" target="_blank">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/amine-chaieb-412972202/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="mailto:m.amine.chaieb@email.com">Email</a>
+      </div>
+    </footer>
+
+    <script src="../js/certificate.js"></script>
+  </body>
+</html>

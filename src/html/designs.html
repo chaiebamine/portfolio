@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Designs</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      .design-preview {
+        width: 350px;
+        height: 400px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .design-preview:hover {
+        transform: scale(1.05);
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .back-button {
+        background-color: #5e60ce;
+        color: #fff;
+        padding: 14px 28px;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: #4c4fd9;
+        transform: scale(1.05);
+      }
+
+      .more-designs {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1.1rem;
+      }
+
+      .more-designs a {
+        color: #5e60ce;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .more-designs a:hover {
+        color: #4c4fd9;
+        text-decoration: underline;
+      }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        .back-button {
+          padding: 12px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="portfolio-section">
+      <h1>My Graphic Designs</h1>
+      <br />
+      <p
+        style="
+          text-align: center;
+          font-size: 1.1rem;
+          margin-top: -20px;
+          color: #555;
+        "
+      >
+        A selection of creative work made using <strong>Canva</strong>,
+        <strong>Adobe Photoshop</strong>, and
+        <strong>Adobe Illustrator</strong>.
+      </p>
+
+      <div class="design-preview-container">
+        <img
+          src="../../assets/designs/design1.png"
+          alt="Design 1"
+          class="design-preview"
+        />
+        <img
+          src="../../assets/designs/design2.png"
+          alt="Design 2"
+          class="design-preview"
+        />
+        <img
+          src="../../assets/designs/design3.png"
+          alt="Design 3"
+          class="design-preview"
+        />
+
+        <video
+          controls
+          poster="../../assets/designs/vid1.png"
+          class="design-preview"
+        >
+          <source src="../../assets/designs/vid1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video
+          controls
+          poster="../../assets/designs/vid2.png"
+          class="design-preview"
+        >
+          <source
+            src="../../assets/designs/vid2.mp4"
+            type="video/mp4"
+            class="design"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <img
+          src="../../assets/designs/Omra.jpg"
+          alt="Design 3"
+          class="design-preview"
+        />
+        <img
+          src="../../assets/designs/omraa.jpg"
+          alt="Design 3"
+          class="design-preview"
+        />
+        <img
+          src="../../assets/designs/design4.png"
+          alt="Design 3"
+          class="design-preview"
+        />
+        <img
+          src="../../assets/designs/design5.png"
+          alt="Design 3"
+          class="design-preview"
+        />
+        <img
+          src="../../assets/designs/card back.png"
+          alt="Design 3"
+          class="design-preview"
+          style="height: 200px"
+        />
+        <img
+          src="../../assets/designs/card front.png"
+          alt="Design 3"
+          class="design-preview"
+          style="height: 200px"
+        />
+        <img
+          src="../../assets/designs/logo final copy.png"
+          alt="Design 3"
+          class="design-preview"
+          style="height: 200px"
+        />
+        <!-- Add more if needed -->
+      </div>
+
+      <div class="button-container">
+        <a href="../../index.html#designs" class="back-button"
+          >← Back to Portfolio</a
+        >
+      </div>
+
+      <div class="more-designs">
+        <p>
+          Want to see more? Check out the full collection on
+          <a href="https://www.canva.com/folder/FAFkixuPSEU" target="_blank"
+            >Canva</a
+          >.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -280,7 +280,7 @@ section {
   .hero-photo img {
     width: 175px;
     height: 175px;
-    transform: translateY(-60px);
+    transform: translateY(60px);
   }
 }
 
@@ -782,7 +782,18 @@ footer {
   overflow: hidden;
   position: relative;
 }
-
+@media (max-width: 768px) {
+  .carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+}
 /* Ensure all images fit properly inside */
 .carousel img {
   object-fit: cover;

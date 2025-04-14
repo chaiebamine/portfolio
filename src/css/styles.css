@@ -50,12 +50,203 @@ nav ul li a:hover {
   color: #00bcd4;
 }
 
+nav ul li a.active {
+  color: #00bcd4;
+  font-weight: bold;
+  border-bottom: 2px solid #00bcd4;
+}
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  padding: 0 20px;
+  z-index: 1100;
+}
+
+/* Mobile nav container */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  background: #222;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+}
+
+/* Show the nav */
+.mobile-nav.open {
+  left: 0;
+}
+
+/* Nav list */
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Remove any horizontal spacing */
+}
+
+/* Nav items */
+.mobile-nav ul li {
+  width: 100%;
+}
+
+/* Nav links */
+.mobile-nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #333;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Lock scroll */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav.desktop-nav {
+    display: none;
+  }
+}
+
+/* Active States */
+body.menu-open {
+  overflow: hidden; /* Disable body scroll when the menu is open */
+}
+
+.mobile-nav.open {
+  left: 0; /* Menu slides in */
+}
+
+.overlay.show {
+  display: block; /* Show the overlay */
+}
+
+/* Responsive Toggle */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none; /* Hide desktop nav */
+  }
+}
+
+section {
+  min-height: 80vh;
+  padding: 50px 20px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+}
+
+#backToTop:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+
+
+.section-divider {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.section-divider svg {
+  position: relative;
+  color: #222;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
 /* Hero Section */
 .hero-section {
-  background: #333;
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)),
+    url("../../assets/images/hero-bg.jpg");
   color: white;
+  background-size: cover;
+  background-position: center;
   padding: 100px 20px;
   text-align: center;
+}
+
+.typewriter {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+  border-right: 2px solid #00bcd4;
+  width: fit-content;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+  text-decoration: underline #00bcd4;
+  text-decoration-thickness: 2px;
+  margin: auto;
+  display: inline-block;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent; /* Makes the right border invisible halfway */
+  }
+  100% {
+    border-color: #00bcd4; /* Restores the blue border */
+  }
 }
 
 .hero-container {
@@ -84,6 +275,13 @@ nav ul li a:hover {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #ccc;
+}
+@media (max-width: 768px) {
+  .hero-photo img {
+    width: 175px;
+    height: 175px;
+    transform: translateY(-60px);
+  }
 }
 
 .hero-section h1 {
@@ -163,6 +361,77 @@ nav ul li a:hover {
 .view-more-organized-btn:hover,
 .view-more-participated-btn:hover {
   background-color: #0056b3;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 80px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.skills-section p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.skill {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 18px;
+  background: #00bcd4;
+  color: white;
+  text-align: right;
+  padding-right: 8px;
+  line-height: 18px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  animation: fillProgress 1s ease-in-out;
+}
+
+/* Animate progress bar fill */
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--final-width);
+  }
 }
 
 /* Projects */
@@ -485,4 +754,158 @@ footer {
 
 .view-more-button:hover {
   background-color: #4a49e0;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* Set a fixed height for all carousels */
+.carousel {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  height: 280px; /* You can adjust this as needed */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Ensure all images fit properly inside */
+.carousel img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: zoom effect on hover */
+.carousel img:hover {
+  transform: scale(1.02);
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  min-height: 300px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item.active {
+  display: block;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  height: 5%;
+  color: #000;
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.5;
+  border-radius: 50%; /* Makes the background a circle */
+}
+
+.carousel-control-prev {
+  left: 5px;
+}
+
+.carousel-control-next {
+  right: 5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* General Section Styles */
+.resume {
+  padding: 60px 0;
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.resume .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resume h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.resume p {
+  font-size: 16px;
+  color: #666;
+}
+
+.resume .row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.resume .col-md-6 {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+}
+
+.resume img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd; /* Light border around the image */
+  border-radius: 10px;
+}
+.resume img:hover {
+  transform: scale(1.05); /* Slightly zoom in the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.resume .btn-primary {
+  background-color: #5bc0de; /* Light Blue Color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.resume .btn-primary:hover {
+  background-color: #1c8cbc; /* Darker blue on hover */
 }
